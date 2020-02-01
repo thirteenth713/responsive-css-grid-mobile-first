@@ -50,7 +50,6 @@ input, textarea {
 h1, h2, h3, h4 {
   color: #DDDBFF;
   font-weight: normal;
-  /* line-height: ; */
 }
 p, a, li {
   color: #9893D8;
@@ -197,7 +196,46 @@ footer img {
 
 /* small tables styles */
 @media screen and (min-width: 620px) {
-  
+  /* header */
+  .welcome-text {
+    grid-column: 1/5;
+  }
+  .welcome-img {
+    grid-column: 5/9;
+  }
+  .welcome-img img {
+    width: 100%;
+  }
+
+  /* projects section */
+  .projects {
+    margin-top: 40px;
+  }
+  .projects a {
+    grid-column: span 4;
+    display: block;
+    margin: 20px 0;
+  }
+  .projects a:last-child {
+    grid-column: 3/7;
+  }
+  .projects a * {
+    max-width: 60%;
+    margin: 10px 20%;
+  }
+  .projects h4 {
+    text-align: center;
+  }
+
+  /* skills section */
+  #skills {
+    padding: 30px 100px;
+  }
+
+  /* footer */
+  footer {
+    background-size: 20%;
+  }
 }
 
 /* large tablets & laptop styles */
