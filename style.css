@@ -337,5 +337,8 @@ footer img {
     padding: 80px 0;
     background-size: 30%;
   }
+  footer img {
+    width: 30px;
+  }
   
 }
